@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #16032A;
+  font-family: Rajdhani;
+  color: white;
+  min-height: 100vh;
+}
+
+.full-height-grow {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav {
+  display: flex;
+  background-color: #251942;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* position: fixed; */
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.player-img {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.menu-icon {
+  display: flex;
+  margin: 1rem;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-sidebar {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: fixed;
+}
+
+.new-age-esport {
+  display: flex;
+  background-color: #251942;
+  margin-top: 0.3rem;
+  min-width: 18.75rem;
+}
+
+.arrow-img {
+  display: flex;
+  margin-top: 0.05rem;
+  margin-left: 1rem;
+}
+
+.text-left-sidebar {
+  margin: 1rem;
+  text-align: left;
+}
+
+.new-age-esport-text {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.create-tour-text {
+  margin: 0;
+  font-size: 14px;
+  color: #BA32FF;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.create-share {
+  display: flex;
+  flex-direction: column;
+  background-color: #251942;
+  margin-top: 0.3rem;
+  min-width: 18.75rem;
+  min-height: 39.563rem;
+  padding-left: 2.6rem;
+  padding-top: 0.5rem;
+  text-align: left;
+}
+
+.create-share-heading {
+  font-weight: bold;
+  letter-spacing: 0.56px;
+}
