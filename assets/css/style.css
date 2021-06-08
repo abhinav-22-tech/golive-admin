@@ -19,10 +19,8 @@ body {
 
 .main-header {
   position: fixed;
-  /* top: 0; */
-  /* left: 0; */
-  /* margin: auto; */
   width: 100%;
+  z-index: 1;
 }
 
 .main-nav {
@@ -30,6 +28,7 @@ body {
   background-color: #251942;
   margin: 0;
   padding: 0;
+  /* flex-shrink: 0; */
 }
 
 .brand-logo {
@@ -37,6 +36,7 @@ body {
   align-items: center;
   /* margin-left: 1rem; */
   margin: 0.2rem 1rem;
+  cursor: pointer;
 }
 
 .player-img {
@@ -45,7 +45,7 @@ body {
   margin-left: auto;
 }
 
-.player-images{
+.player-images {
   /* padding: 0rem; */
   margin: 0.2rem 1rem;
 }
@@ -59,14 +59,18 @@ body {
 .main-section {
   display: flex;
   flex-direction: row;
+  flex-grow: 1;
+}
+
+.left-parameter {
+  position: fixed;
+  z-index: 1;
 }
 
 .left-sidebar {
   display: flex;
   flex-direction: column;
   margin-top: 3.85rem;
-  overflow: hidden;
-  position: fixed;
 }
 
 .new-age-esport {
@@ -113,7 +117,7 @@ body {
 }
 
 .create-share.arrow-right:after {
-  content: " ";
+  content: "";
   position: absolute;
   right: 0px;
   top: 120px;
@@ -128,21 +132,145 @@ body {
   letter-spacing: 0.56px;
 }
 
-.create-share-sub{
+.create-share-sub {
   font-size: 14px;
   font-weight: medium;
   letter-spacing: 0.49px;
   margin: 0;
 }
 
-.create-share-content{
+.create-share-content {
   color: #7C758D;
 }
 
-.create-share-subcontent{
+.create-share-subcontent {
   margin-top: -12px;
 }
 
-.share-content{
+.share-content {
   margin-top: 30px;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.4rem;
+  margin-left: 17rem;
+  width: 100%;
+}
+
+.secondary-head {
+  display: flex;
+  text-align: left;
+  letter-spacing: 0.56px;
+}
+
+.secondary-head ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  margin-bottom: 0
+}
+
+.list-under-bar li {
+  margin: 1rem;
+}
+
+.secondary-head li a {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease 0s;
+}
+
+.secondary-head li a:hover {
+  color: #BA32FF;
+}
+
+.list-under-bar li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  margin-top: 5px;
+  height: 5px;
+  background: #BA32FF;
+  transition: width .3s;
+}
+
+.list-under-bar li a:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+.list-under-bar .current::after {
+  width: 100%;
+}
+
+.help-text {
+  margin: 1rem;
+  margin-left: auto;
+}
+
+.help-text a {
+  font-weight: 600;
+  font-size: 15px;
+  color: #BA32FF;
+  text-decoration: none;
+  margin-left: auto;
+  /* font-size: 16px;
+  font-weight: bold; */
+  /* color: white; */
+  /* text-decoration: none; */
+  /* text-transform: uppercase; */
+}
+
+.basics {
+  display: flex;
+  flex-direction: column;
+  width: 94%;
+  margin-left: 3.3rem;
+}
+
+.match-details {
+  background-color: #251942;
+  /* background: #21123A 0% 0% no-repeat padding-box; */
+  /* min-width: 50%;
+  min-height: 3.75rem; */
+}
+
+.selected-tour {
+  color: #5637A2;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.sky-league-tour {
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 0px;
+}
+
+.input-class {
+  border: 1px solid #5637A2;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 18px;
+  color: white;
+  font-weight: 100;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field{
+  display: flex;
+  width: 75%;
+}
+
+.calender-icon{
+  padding: 0.6rem;
+  position: absolute;
+  z-index: 2;
+  transform: translateX(9.5rem);
 }
