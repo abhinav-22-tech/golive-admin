@@ -1,15 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
-*, *::before, *::after {
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
   padding: 0;
   margin: 0;
-  background-color: #16032A;
+  background-color: #16032a;
   font-family: Rajdhani;
   color: white;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .full-height-grow {
@@ -64,13 +67,14 @@ body {
 
 .left-parameter {
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
 
 .left-sidebar {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
-  margin-top: 3.85rem;
+  /* position: relative; */
+  top: 3.85rem;
 }
 
 .new-age-esport {
@@ -101,7 +105,7 @@ body {
 .create-tour-text {
   margin: 0;
   font-size: 14px;
-  color: #BA32FF;
+  color: #ba32ff;
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -122,7 +126,7 @@ body {
   right: 0px;
   top: 120px;
   border-top: 15px solid transparent;
-  border-right: 15px solid #16032A;
+  border-right: 15px solid #16032a;
   border-left: none;
   border-bottom: 15px solid transparent;
 }
@@ -140,7 +144,7 @@ body {
 }
 
 .create-share-content {
-  color: #7C758D;
+  color: #7c758d;
 }
 
 .create-share-subcontent {
@@ -152,15 +156,16 @@ body {
 }
 
 .right-section {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
-  margin-top: 3.4rem;
-  margin-left: 17rem;
+  position: relative;
+  top: 3.85rem;
+  left: 19rem;
   width: 100%;
 }
 
 .secondary-head {
-  display: flex;
+  /* display: flex; */
   text-align: left;
   letter-spacing: 0.56px;
 }
@@ -168,12 +173,14 @@ body {
 .secondary-head ul {
   display: flex;
   list-style: none;
-  width: 100%;
-  margin-bottom: 0
+  /* position: relative; */
+  width: calc(100% - 18.75rem);
+  padding: initial;
+  margin: initial;
 }
 
 .list-under-bar li {
-  margin: 1rem;
+  margin: 1rem 1rem 0rem 1rem;
 }
 
 .secondary-head li a {
@@ -185,22 +192,22 @@ body {
 }
 
 .secondary-head li a:hover {
-  color: #BA32FF;
+  color: #ba32ff;
 }
 
 .list-under-bar li a::after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   margin-top: 5px;
   height: 5px;
-  background: #BA32FF;
-  transition: width .3s;
+  background: #ba32ff;
+  transition: width 0.3s;
 }
 
 .list-under-bar li a:hover::after {
   width: 100%;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 
 .list-under-bar .current::after {
@@ -215,7 +222,7 @@ body {
 .help-text a {
   font-weight: 600;
   font-size: 15px;
-  color: #BA32FF;
+  color: #ba32ff;
   text-decoration: none;
   margin-left: auto;
   /* font-size: 16px;
@@ -226,33 +233,47 @@ body {
 }
 
 .basics {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
-  width: 94%;
-  margin-left: 3.3rem;
+  position: relative;
+  width: calc(100% - 20.75rem);
+  left: 1rem;
+  top: 0.2rem;
+  /* margin-right: 1rem; */
+}
+
+.basics-heading {
+  font: normal normal bold 16px/16px Rajdhani;
+  letter-spacing: 0.56px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .match-details {
   background-color: #251942;
-  /* background: #21123A 0% 0% no-repeat padding-box; */
-  /* min-width: 50%;
-  min-height: 3.75rem; */
+  padding: 1rem;
 }
 
 .selected-tour {
-  color: #5637A2;
-  font-size: 15px;
-  font-weight: 600;
+  padding: 1rem;
+  font: normal normal 600 15px/52px Rajdhani;
+  letter-spacing: 0px;
+  color: #5637a2;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .sky-league-tour {
   font-size: 25px;
   font-weight: 600;
   letter-spacing: 0px;
+  padding: 1rem;
+  margin: 0;
 }
 
 .input-class {
-  border: 1px solid #5637A2;
+  border: 1px solid #5637a2;
   border-radius: 5px;
   background-color: transparent;
   font-size: 18px;
@@ -260,17 +281,41 @@ body {
   font-weight: 100;
   width: 100%;
   padding: 10px;
-  outline: none;
+  outline-color: #ba32ff;
 }
 
-.input-field{
+.input-field {
   display: flex;
   width: 75%;
+  padding: 1rem;
+  margin: 0;
 }
 
-.calender-icon{
+.calender-icon {
   padding: 0.6rem;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   transform: translateX(9.5rem);
+}
+
+.input-row {
+  display: flex;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url("../images/fi-rr-calendar.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+  border-width: thin;
+}
+
+input::placeholder {
+  font: normal normal 600 18px/52px Rajdhani;
+  letter-spacing: 0px;
+  color: #5637a2;
+  text-transform: uppercase;
+  opacity: 1;
 }
