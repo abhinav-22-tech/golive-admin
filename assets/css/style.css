@@ -238,7 +238,7 @@ body {
   position: relative;
   width: calc(100% - 20.75rem);
   left: 1rem;
-  top: 0.2rem;
+  top: 1.2rem;
   /* margin-right: 1rem; */
 }
 
@@ -248,15 +248,26 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   margin: 0;
+  padding-bottom: 1rem;
+}
+
+.basics-heading2 {
+  font: normal normal bold 16px/16px Rajdhani;
+  letter-spacing: 0.56px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 2rem;
 }
 
 .match-details {
   background-color: #251942;
   padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 .selected-tour {
-  padding: 1rem;
+  padding: 0rem 1rem 0rem 1rem;
   font: normal normal 600 15px/52px Rajdhani;
   letter-spacing: 0px;
   color: #5637a2;
@@ -268,8 +279,8 @@ body {
   font-size: 25px;
   font-weight: 600;
   letter-spacing: 0px;
-  padding: 1rem;
-  margin: 0;
+  padding: 0rem 1rem 0rem 1rem;
+  margin: -1rem 0rem 1rem 0rem;
 }
 
 .input-class {
@@ -287,7 +298,7 @@ body {
 .input-field {
   display: flex;
   width: 75%;
-  padding: 1rem;
+  padding: 0.5rem 1rem 1rem 0.5rem;
   margin: 0;
 }
 
@@ -310,6 +321,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: 20px;
   height: 20px;
   border-width: thin;
+  cursor: pointer;
+}
+
+input[type="drop"] {
+  font: normal normal 600 18px Rajdhani;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 input::placeholder {
@@ -319,3 +338,67 @@ input::placeholder {
   text-transform: uppercase;
   opacity: 1;
 }
+
+.dropbtn {
+  font: normal normal 600 18px Rajdhani;
+  letter-spacing: 0px;
+  color: #ba32ff;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0rem 1rem 0rem 1rem;
+  margin: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 10px;
+}
+
+.input-class-drop {
+  border: 1px solid #5637a2;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 18px;
+  color: white;
+  font-weight: 100;
+  width: 100%;
+  padding: 10px;
+  outline-color: #ba32ff;
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 0.5rem 1rem 1rem 0.5rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #251942;
+  width: 95.5%;
+  top: 80%;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ba32ff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* .dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+} */
