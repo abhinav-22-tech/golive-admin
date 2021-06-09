@@ -329,6 +329,8 @@ input[type="drop"] {
   letter-spacing: 0px;
   color: #ffffff;
   text-transform: uppercase;
+  /* position: relative; */
+  text-indent: 6%;
 }
 
 input::placeholder {
@@ -382,6 +384,8 @@ input::placeholder {
   width: 95.5%;
   top: 80%;
   z-index: 1;
+  border: 1px solid #5637a2;
+  border-radius: 5px;
 }
 
 .dropdown-content a {
@@ -399,6 +403,37 @@ input::placeholder {
   display: block;
 }
 
-/* .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-} */
+.delhi-dragons-img {
+  display: flex;
+  flex-direction: row;
+  background: url("../images/Delhi\ Dragons.svg") no-repeat;
+  background-size: 36px;
+  background-position: 0%;
+}
+
+.kolkata-triden-img {
+  display: flex;
+  flex-direction: row;
+  background: url("../images/Kolkata\ tridents.svg") no-repeat;
+  background-size: 36px;
+  background-position: 0%;
+}
+
+.drop-text {
+  font: normal normal normal 18px Rajdhani;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-indent: 6%;
+}
+
+input[type="number"]:invalid .requirements {
+  max-height: 200px;
+  padding: 0 30px 20px 50px;
+}
+
+.requirements {
+  font: normal normal 500 14px Rajdhani;
+  letter-spacing: 0.7px;
+  color: #ff4f61;
+}
