@@ -437,3 +437,31 @@ input[type="number"]:invalid .requirements {
   letter-spacing: 0.7px;
   color: #ff4f61;
 }
+
+.web-btn{
+  display: flex;
+  margin-left: auto;
+}
+
+.web-btn a:link,
+a:visited {
+  margin-left: auto;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #ba32ff;
+  border: 1px solid #ba32ff;
+  width: 8rem;
+  height: 3.125rem;
+  border-radius: 5px;
+  font: normal normal bold 16px Rajdhani;
+  letter-spacing: 0.56px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.web-btn a:hover,
+a:active {
+  background-color: #ab16f5;
+}
