@@ -287,12 +287,14 @@ body {
   border: 1px solid #5637a2;
   border-radius: 5px;
   background-color: transparent;
-  font-size: 18px;
-  color: white;
-  font-weight: 100;
+  font: normal normal 600 18px Rajdhani;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
   width: 100%;
   padding: 10px;
   outline-color: #ba32ff;
+  letter-spacing: 0px;
 }
 
 .input-field {
@@ -438,14 +440,13 @@ input[type="number"]:invalid .requirements {
   color: #ff4f61;
 }
 
-.web-btn{
+.web-btn {
   display: flex;
-  margin-left: auto;
 }
 
 .web-btn a:link,
 a:visited {
-  margin-left: auto;
+  
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;

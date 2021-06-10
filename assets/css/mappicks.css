@@ -1,0 +1,7 @@
+.clip-img {
+  display: flex;
+  flex-direction: row;
+  background: url("../images/fi-rr-clip.svg") no-repeat;
+  background-size: 22px;
+  background-position: 0%;
+}
