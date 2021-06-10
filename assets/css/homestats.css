@@ -1,0 +1,51 @@
+.home-team-card1 {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.delhi-dragons-img2 {
+  width: 78px;
+  height: 78px;
+}
+
+.delhi-dragonshead {
+  display: flex;
+  font: normal normal 600 25px Rajdhani;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 1.5rem 1rem;
+}
+
+.delhi-dragons-team-icons {
+  padding: 1rem;
+  margin-left: auto;
+}
+
+.allmaps {
+  display: flex;
+  flex-direction: row;
+}
+
+.player-img-name {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.player-name {
+  font: normal normal 600 18px Rajdhani;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  top: 1.7rem;
+  position: relative;
+  padding: 1rem 3.5rem 1rem 1rem;
+}
+
+.nameplayerimg {
+  background: url("../images/name-player.svg") no-repeat;
+  background-size: 18rem;
+  background-position: 10%;
+}

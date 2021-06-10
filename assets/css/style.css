@@ -225,11 +225,6 @@ body {
   color: #ba32ff;
   text-decoration: none;
   margin-left: auto;
-  /* font-size: 16px;
-  font-weight: bold; */
-  /* color: white; */
-  /* text-decoration: none; */
-  /* text-transform: uppercase; */
 }
 
 .basics {
@@ -313,6 +308,11 @@ body {
 
 .input-row {
   display: flex;
+}
+
+.input-col {
+  display: flex;
+  flex-direction: column;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -446,7 +446,6 @@ input[type="number"]:invalid .requirements {
 
 .web-btn a:link,
 a:visited {
-  
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
