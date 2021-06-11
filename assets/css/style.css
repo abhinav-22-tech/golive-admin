@@ -220,8 +220,8 @@ body {
 }
 
 .help-text a {
-  font-weight: 600;
-  font-size: 15px;
+  font: normal normal 600 15px Rajdhani;
+  letter-spacing: 0.53px;
   color: #ba32ff;
   text-decoration: none;
   margin-left: auto;

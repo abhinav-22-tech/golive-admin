@@ -44,8 +44,57 @@
   padding: 1rem 3.5rem 1rem 1rem;
 }
 
-.nameplayerimg {
-  background: url("../images/name-player.svg") no-repeat;
-  background-size: 18rem;
-  background-position: 10%;
+.player-name-icon {
+  display: flex;
+  flex-direction: row;
+}
+
+.team-name-img {
+  background: url("../images/Rayna.svg"), url("../images/Omen.svg"),
+    url("../images/Killjoy.svg");
+  background-size: 1.6rem;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 2%, 28%, 53%;
+}
+
+.Raynaimg {
+  background: url("../images/Rayna.svg");
+  background-size: 1.6rem;
+  background-repeat: no-repeat;
+  background-position: 2%;
+}
+
+.half-1-2-text {
+  padding: 0.5rem;
+  font: normal normal 600 18px Rajdhani;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.sword-img {
+  display: flex;
+  flex-direction: row;
+  background: url("../images/sword.svg") no-repeat;
+  background-size: 24px;
+  background-position: 0%;
+}
+
+.shield-img {
+  display: flex;
+  flex-direction: row;
+  background: url("../images/shield.svg") no-repeat;
+  background-size: 24px;
+  background-position: 0%;
+}
+
+.map-match{
+  cursor: pointer;
+  color: #5637A2;
+  outline: none;
+}
+
+.map-matche:enabled{
+  background-color: #BA32FF;
+  color: #ffffff;
 }
