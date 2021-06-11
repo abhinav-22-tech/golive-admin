@@ -88,13 +88,31 @@
   background-position: 0%;
 }
 
-.map-match{
+.map-match {
   cursor: pointer;
-  color: #5637A2;
+  color: #5637a2;
   outline: none;
 }
 
-.map-matche:enabled{
-  background-color: #BA32FF;
+.map-matche:enabled {
+  background-color: #ba32ff;
   color: #ffffff;
+}
+
+.union-red-img {
+  display: flex;
+  flex-direction: column;
+  width: 22px;
+  height: 22px;
+  position: relative;
+  top: 1rem;
+  right: 0.4rem;
+}
+
+.score {
+  position: relative;
+  display: flex;
+  /* width: 100%; */
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
 }
